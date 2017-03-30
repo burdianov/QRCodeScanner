@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.util.SparseArrayCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
@@ -27,9 +26,9 @@ public class ScanActivity extends AppCompatActivity {
     @BindView(R.id.cameraView)
     SurfaceView mCameraView;
 
-    BarcodeDetector mBarcode;
-    CameraSource mCameraSource;
-    SurfaceHolder mHolder;
+    private BarcodeDetector mBarcode;
+    private CameraSource mCameraSource;
+    private SurfaceHolder mHolder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

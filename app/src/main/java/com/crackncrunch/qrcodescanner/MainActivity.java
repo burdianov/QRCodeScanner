@@ -18,8 +18,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int REQUEST_CODE = 100;
-    public static final int PERMISSION_REQUEST_CODE = 200;
+    private static final int REQUEST_CODE = 100;
+    private static final int PERMISSION_REQUEST_CODE = 200;
 
     @BindView(R.id.scanBtn)
     Button mScanBtn;
@@ -64,3 +64,4 @@ public class MainActivity extends AppCompatActivity {
 }
 
 // www.the-qrcode-generator.com
+// https://code.tutsplus.com/tutorials/reading-qr-codes-using-the-mobile-vision-api--cms-24680
